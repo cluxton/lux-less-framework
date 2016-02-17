@@ -1,0 +1,58 @@
+@p: @prefix;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+// html {
+//   box-sizing: border-box;
+// }
+
+// *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+
+.@{p}wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.@{p}page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+.@{p}header {
+	background-color: black;
+	color: white;
+}
+
+.@{p}main {
+	flex: 1 0 auto;
+  	display: block;
+}
+
+.@{p}footer {
+	background-color: black;
+	color: white;
+}
+
+.@{p}content {
+	width: @content-width;
+	margin: 0 auto;
+}
+
+@media (max-width: @content-width) {
+	.@{p}content {
+		width: auto;
+		margin: 0;
+	}
+}
+
+
+
+

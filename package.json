@@ -1,0 +1,28 @@
+{
+  "name": "lux-less-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./scripts/mkdir.js ./dist && lessc ./less/lux.less | postcss --use autoprefixer > ./dist/lux.css",
+    "start" : "http-server -c -1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cluxton/lux-less-framework.git"
+  },
+  "author": "Charles Luxton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cluxton/lux-less-framework/issues"
+  },
+  "homepage": "https://github.com/cluxton/lux-less-framework#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "less": "^2.6.0",
+    "postcss-cli": "^2.5.1"
+  },
+  "dependencies": {
+    "http-server": "^0.8.5"
+  }
+}

@@ -1,0 +1,25 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: x-large;
+}
+
+@media (max-width: @large-break-point) {
+  body {
+  	font-size: large;
+  }
+}
+
+@media (max-width: @small-break-point) {
+  body {
+  	font-size: small;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+h1 > small, h2 > small, h3 > small, h4 > small, h5 > small {
+	font-size: 0.6em;
+	color: #333;
+}
