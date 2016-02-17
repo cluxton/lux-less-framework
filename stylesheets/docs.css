@@ -1,0 +1,10 @@
+xmp {
+	font-size: 0.8em;
+	background-color: #efefef;
+	white-space: pre-wrap;
+}
+
+[class*='lx-col-'] {
+  border: 1px solid grey;
+  padding: 10px;
+}
