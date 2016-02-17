@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>LUX</title>
+		<title>LUX - layouts</title>
 		<meta charset="UTF-8">
   		<meta name="viewport" content="width=device-width">
 	  	<link rel="stylesheet" href="../stylesheets/docs.css">
@@ -13,9 +13,6 @@
   		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-			
-		</script>
 		<div class="lx-wrapper">
 		  <div class="lx-page">
 		    <header class="lx-header">
@@ -24,11 +21,47 @@
 		     </div>
 		    </header>
 		    <div class="lx-main lx-content">
-		    	<h3>Components</h3>
-		    	<ul>
-		    		<li><a href="grid.html">Grid</a></li>
-		    		<li><a href="layout.html">Page layout</a></li>
-		    	</ul>
+		    <a href="index.html">Back</a>
+		    <h3>Layouts</h3>
+		    <p>This page is using the wrapper, page, header, main &amp; footer classes.</p>
+<!-- Content goes here -->
+<div class="htmlsample showgrid"><!--This would normally be your body element-->
+<div class="fakebody">
+	<div class="lx-wrapper">
+		<div class="lx-page" style="min-height: 100%;">
+			<div class="lx-header">
+				HEADER
+			</div>
+			<div class="lx-main">
+				CONTENT
+			</div>
+			<div class="lx-footer">
+				FOOTER
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<p>The <code>lx-content</code> class provides some standard padding and limits the width of the content to the value set by <code>@page-width</code> in variables.less.</p>
+<!-- Content goes here -->
+<div class="htmlsample showgrid"><div class="fakebody">
+	<div class="lx-wrapper">
+		<div class="lx-page" style="min-height: 100%;">
+			<div class="lx-header">
+				<div class="lx-content">HEADER</div>
+			</div>
+			<div class="lx-main lx-content">
+				CONTENT
+			</div>
+			<div class="lx-footer">
+				<div class="lx-content">FOOTER</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+
 
 		    </div>
 		    <footer class="lx-footer">

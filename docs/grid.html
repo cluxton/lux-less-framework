@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>LUX</title>
+		<title>LUX - grid</title>
 		<meta charset="UTF-8">
   		<meta name="viewport" content="width=device-width">
 	  	<link rel="stylesheet" href="../stylesheets/docs.css">
@@ -24,11 +24,40 @@
 		     </div>
 		    </header>
 		    <div class="lx-main lx-content">
-		    	<h3>Components</h3>
-		    	<ul>
-		    		<li><a href="grid.html">Grid</a></li>
-		    		<li><a href="layout.html">Page layout</a></li>
-		    	</ul>
+		    	<a href="index.html">Back</a>
+		    	<h3>Grid system</h3>
+		    	<p>Each column specifies its width in 1/12 units. <strong>lx-col-4</strong> will take up 4/12 of the available width</p>
+<h5>Basic columns</h5>
+<div class="htmlsample showgrid"><div class="lx-row">
+	<div class="lx-col-4">lx-col-4</div>
+	<div class="lx-col-4">lx-col-4</div>
+	<div class="lx-col-4">lx-col-4 -  overflowing content will expand the entire row</div>
+</div>
+<div class="lx-row">
+	<div class="lx-col-3">lx-col-3</div>
+	<div class="lx-col-3">lx-col-3</div>
+	<div class="lx-col-3">lx-col-3</div>
+	<div class="lx-col-3">lx-col-3</div>
+</div></div>
+
+<h5>Offset columns</h5>
+<div class="htmlsample showgrid"><div class="lx-row">
+	<div class="lx-col-4">lx-col-4</div>
+	<div class="lx-col-4 lx-col-offset-4">lx-col-4 lx-col-offset-4</div>
+</div>
+<div class="lx-row">
+	<div class="lx-col-3">lx-col-3</div>
+	<div class="lx-col-3 lx-col-offset-3">lx-col-3 lx-col-offset-3</div>
+	<div class="lx-col-3">lx-col-3</div>
+</div></div>
+
+<h5 id="responsive">Responsive columns</h5>
+<p>Specify the maximum size for a rule using one of the breakpoints (small, medium, large) as a suffix. Adding the class <strong>lx-col-12-small</strong> to a column will expand it to 100% only on small screens. Resize your browser window to see this in action.
+<div class="htmlsample showgrid"><div class="lx-row">
+	<div class="lx-col-4 lx-col-12-small">lx-col-4 lx-col-12-small</div>
+	<div class="lx-col-4 lx-col-12-small">lx-col-4 lx-col-12-small</div>
+	<div class="lx-col-4 lx-col-12-small">lx-col-4 lx-col-12-small</div>
+</div></div>
 
 		    </div>
 		    <footer class="lx-footer">

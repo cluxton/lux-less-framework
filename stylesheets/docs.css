@@ -1,10 +1,21 @@
-xmp {
-	font-size: 0.8em;
+.code {
 	background-color: #efefef;
-	white-space: pre-wrap;
 }
 
-[class*='lx-col-'] {
-  border: 1px solid grey;
-  padding: 10px;
+
+.showgrid [class*='lx-col-'] {
+	background-color: white;
+	border: 1px solid grey;
+	padding: 6px;
+	font-size: 0.8em;
+}
+
+.showgrid .lx-row {
+	background-color: #ddd;
+}
+
+.fakebody {
+	border: 2px solid red;
+	position: relative;
+	height: 200px
 }
