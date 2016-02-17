@@ -29,6 +29,16 @@
 
 .fn-generate-columns(@columns);
 
+.fn-generate-offsets(@n, @suffix: ~'', @i: 1) when (@i =< @n) {
+  .@{prefix}col-offset-@{i}@{suffix} {
+    margin-left: (@i * 100% / @n);
+  }
+  .fn-generate-offsets(@n, @suffix, (@i + 1));
+}
+
+.fn-generate-offsets(@columns);
+
 @media (max-width: @small) {
 	.fn-generate-columns(@columns, ~'-small');
+  .fn-generate-offsets(@columns, ~'-small');
 }
