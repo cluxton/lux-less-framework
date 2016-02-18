@@ -27,8 +27,14 @@ body {
 }
 
 .@{p}header {
-	background-color: black;
+	background-color: #0D47A1;
 	color: white;
+	position: relative;
+}
+
+.@{p}title {
+	display: inline-block;
+	padding: @pad;
 }
 
 .@{p}main {
@@ -44,7 +50,7 @@ body {
 .@{p}content {
 	width: @content-width;
 	margin: 0 auto;
-	padding: @pad;
+	box-sizing: border-box;	
 }
 
 @media (max-width: @content-width) {
