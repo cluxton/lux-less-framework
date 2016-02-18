@@ -1,6 +1,6 @@
 {
   "name": "lux-less-framework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,10 @@
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "less": "^2.6.0",
-    "postcss-cli": "^2.5.1"
+    "postcss-cli": "^2.5.1",
+    "http-server": "^0.8.5"
   },
   "dependencies": {
-    "http-server": "^0.8.5"
+    
   }
 }
