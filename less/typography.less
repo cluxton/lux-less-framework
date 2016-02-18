@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: x-large;
+	color: @text-color;
 }
 
 @media (max-width: @large-break-point) {
@@ -14,6 +15,20 @@ body {
   	font-size: medium;
   }
 }
+
+.@{prefix}text-small {
+	font-size: medium;
+}
+
+.@{prefix}text-medium {
+	font-size: large;
+}
+
+.@{prefix}text-large {
+	font-size: x-large;
+}
+
+
 
 h1, h2, h3, h4, h5 {
 	margin: 0;
