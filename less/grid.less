@@ -29,7 +29,7 @@
 
 .fn-generate-columns(@columns);
 
-.fn-generate-offsets(@n, @suffix: ~'', @i: 1) when (@i =< @n) {
+.fn-generate-offsets(@n, @suffix: ~'', @i: 0) when (@i =< @n) {
   .@{prefix}col-offset-@{i}@{suffix} {
     margin-left: (@i * 100% / @n);
   }

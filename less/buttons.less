@@ -1,0 +1,66 @@
+@p: @prefix;
+
+.@{p}btn {
+	display: inline-block;
+	text-decoration: none;
+	height: 2em;
+	border: 1px solid black;
+	font-size: 1em;
+	padding: 0em 1em;
+	box-sizing: border-box;
+	color: @text-color;
+	cursor: pointer;
+	background-color: white;
+	border-radius: @border-radius;
+	margin: 0;
+}
+
+.@{p}btn:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.@{p}btn:hover {
+	background-color: darken(white, 6%);
+	color: lighten(@text-color, 12%);
+}
+.@{p}btn:active {
+	background-color: darken(white, 12%);
+	color: lighten(@text-color, 12%);
+}
+
+// .@{p}btn@{name}.@{p}disabled, .@{p}btn-@{name}:disabled {
+// 	opacity: 0.8;
+// 	cursor: default;
+// 	background-color: desaturate(@base-color, 30%);
+// }
+
+.button-colors(@base-color) {
+	background-color: @base-color;
+	color: lighten(@base-color, 80%);
+	border: 1px solid darken(@base-color, 15%);
+
+	&:hover {
+		background-color: darken(@base-color, 6%);
+		color: lighten(@base-color, 80%);
+	}
+
+	&:active {
+		background-color: darken(@base-color, 12%);
+		color: lighten(@base-color, 80%);
+	}
+
+	&.@{p}disabled, &:disabled {
+		opacity: 0.8;
+		cursor: default;
+		background-color: desaturate(@base-color, 30%);
+	}
+}
+
+.@{p}btn-primary { .button-colors(@color-primary); }
+.@{p}btn-secondary { .button-colors(@color-secondary); }
+.@{p}btn-success { .button-colors(@color-success); }
+.@{p}btn-warning { .button-colors(@color-warning); }
+.@{p}btn-error { .button-colors(@color-error); }
